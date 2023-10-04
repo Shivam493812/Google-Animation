@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Logo with glow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #000;
+        }
+
+        #logo{
+            color: #fff;
+            position: relative;
+            text-shadow: 0 0 50px #16eac9,
+                         0 0 100px #16eac9,
+                         0 0 150px #16eac9,
+                         0 0 200px #16eac9,
+                         0 0 250px #16eac9;
+                         animation: animation 1s linear infinite;
+        }
+
+        @keyframes animation{
+            0%{
+                filter: hue-rotate(0deg);
+            }100%{
+                filter: hue-rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <i class="fa-8x fa-brands fa-google" id="logo"></i>
+    </div>
+</body>
+</html>
